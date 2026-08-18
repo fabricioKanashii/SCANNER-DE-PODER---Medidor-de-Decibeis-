@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>SCANNER DE PODER — Grite e Suba de Nível</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800;900&family=Share+Tech+Mono&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="stars"></div>
+
+  <div class="flash" id="flash"></div>
+
+  <div class="over9000" id="over9000text">
+    É MAIS DE 9000!!!<br>
+    OVER 9000!!!
+  </div>
+
+  <div class="glitch-overlay" id="glitchOverlay"></div>
+
+  <div class="explosion" id="explosion">
+    <div class="shock" id="shock"></div>
+
+    <div class="explosion-text" id="explosionText">
+      SISTEMA SOBRECARREGADO
+      <br>
+      <span>REINICIANDO...</span>
+    </div>
+  </div>
+
+  <div class="app" id="app">
+
+    <!-- HEADER -->
+    <div class="hud">
+
+      <div class="brand">
+        <div class="kicker">
+          SCOUTER MK-III · SCAN DE GRITO
+        </div>
+
+        <div class="title">
+          SCANNER DE PODER
+        </div>
+      </div>
+
+      <div class="hud-actions">
+
+        <button class="icon-btn" id="resetBtn">
+          ZERAR RECORDE
+        </button>
+
+        <button class="icon-btn" id="fsBtn">
+          TELA CHEIA
+        </button>
+
+      </div>
+
+      <div class="brk-r"></div>
+
+    </div>
+
+    <!-- MAIN -->
+    <div class="main">
+
+      <!-- READOUT -->
+      <div class="readout">
+
+        <div class="block">
+
+          <div class="label">
+            NÍVEL DE PODER
+          </div>
+
+          <div class="power" id="powerNow">
+            0
+          </div>
+
+          <div class="stage-name" id="stageName">
+            FORMA BASE
+          </div>
+
+        </div>
+
+        <div class="block record">
+
+          <div class="label">
+            RECORDE DA SESSÃO
+          </div>
+
+          <div class="power" id="powerRecord">
+            0
+          </div>
+
+        </div>
+
+        <div class="legend" id="legend">
+
+          <div class="row" data-stage="0">
+            <span
+              class="dot"
+              style="background:var(--ki-blue)"
+            ></span>
+            FORMA BASE
+          </div>
+
+          <div class="row" data-stage="1">
+            <span
+              class="dot"
+              style="background:var(--kaioken)"
+            ></span>
+            KAIOKEN
+          </div>
+
+          <div class="row" data-stage="2">
+            <span
+              class="dot"
+              style="background:var(--saiyan-gold)"
+            ></span>
+            SUPER SAIYAJIN
+          </div>
+
+          <div class="row" data-stage="3">
+            <span
+              class="dot"
+              style="background:var(--saiyan-gold)"
+            ></span>
+            SUPER SAIYAJIN 2
+          </div>
+
+          <div class="row" data-stage="4">
+            <span
+              class="dot"
+              style="background:var(--saiyan-gold)"
+            ></span>
+            SUPER SAIYAJIN 3
+          </div>
+
+          <div class="row" data-stage="5">
+            <span
+              class="dot"
+              style="background:var(--ssb-blue)"
+            ></span>
+            SAIYAJIN BLUE
+          </div>
+
+          <div class="row" data-stage="6">
+            <span
+              class="dot"
+              style="background:var(--ultra-white)"
+            ></span>
+            INSTINTO SUPERIOR
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- GAUGE -->
+      <div class="gauge-wrap">
+
+        <div class="gauge-frame" id="gaugeFrame">
+
+          <div class="scanlines"></div>
+
+          <div
+            class="particles"
+            id="particles"
+          ></div>
+
+          <div
+            class="peak-marker"
+            id="peakMarker"
+          ></div>
+
+          <div
+            class="fill"
+            id="fill"
+          ></div>
+
+          <svg
+            class="cracks"
+            id="cracks"
+            viewBox="0 0 100 100"
+            preserveAspectRatio="none"
+          >
+
+            <polyline
+              points="50,0 44,18 58,30 40,46 55,60 38,74 52,88 46,100"
+            />
+
+            <polyline
+              points="20,10 34,26 18,40 32,55 15,68 30,82"
+            />
+
+            <polyline
+              points="80,15 66,28 82,42 64,58 84,72 68,90"
+            />
+
+          </svg>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+
+      <div class="status" id="status">
+        TOQUE PARA ATIVAR O MICROFONE E GRITAR
+      </div>
+
+      <div class="sens-row">
+
+        <label for="sensitivity">
+          SENSIBIL.
+        </label>
+
+        <input
+          type="range"
+          id="sensitivity"
+          min="1"
+          max="10"
+          value="5"
+          step="1"
+        >
+
+      </div>
+
+      <button
+        class="start-btn"
+        id="startBtn"
+      >
+        GRITAR AGORA
+      </button>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
