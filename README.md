@@ -214,11 +214,3 @@ O Scanner de Poder foi concebido como uma experiência tecnológica interativa, 
 Este projeto utiliza referências visuais e conceituais inspiradas na estética de **Dragon Ball**, especialmente no conceito de Scouter e níveis de poder.
 
 O projeto foi desenvolvido como uma experiência interativa e não possui, por si só, finalidade de representar oficialmente qualquer produto ou sistema da franquia Dragon Ball.
-
----
-
-## Licença
-
-Projeto desenvolvido para utilização no contexto definido com a **ENEL**.
-
-A reprodução, redistribuição ou utilização comercial do projeto deve ser previamente autorizada pelo autor e/ou pelos responsáveis pela contratação do projeto.
