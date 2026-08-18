@@ -6,7 +6,7 @@ O **Scanner de Poder** é uma experiência interativa inspirada nos tradicionais
 
 Por meio do microfone do dispositivo, o sistema captura a intensidade sonora da voz e converte o resultado em um **nível de poder**, acompanhado por efeitos visuais, transformações e eventos especiais.
 
-O projeto foi **produzido especialmente para a ENEL**, com foco em proporcionar uma experiência tecnológica, interativa e divertida ao público.
+O projeto foi **produzido especialmente para um stand da ENEL**, com foco em proporcionar uma experiência tecnológica, interativa e divertida ao público.
 
 ---
 
